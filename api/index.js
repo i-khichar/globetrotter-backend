@@ -26,10 +26,10 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/destinations', destinationRoutes);
-app.use('/api/challenges', challengeRoutes);
-app.use('/api/users', userRoutes);
+app.use('/auth', authRoutes);
+app.use('/destinations', destinationRoutes);
+app.use('/challenges', challengeRoutes);
+app.use('/users', userRoutes);
 
 // Health check route
 app.get('/health', (req, res) => {
